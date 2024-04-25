@@ -6,7 +6,7 @@ const Matches = () => {
     const [match, setMatch] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/score')
+        fetch('https://cricket-score-board-server.vercel.app/score')
         .then(res =>res.json())
         .then(data =>{
             setMatch(data)
