@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from 'react';
 import MatchDetails from './MatchDetails';
+import { useQuery } from '@tanstack/react-query';
 
 const Matches = () => {
 
-    const [match, setMatch] = useState([]);
+    const {refetch, data: match = []} = useQuery({
+        queryKey:[ 'match' ],
+        queryFn:async () =>{
+            const res = await fetch('https://cricket-score-board-server.vercel.app/score')
+            return res.json()
+        }
 
-    useEffect(()=>{
-        fetch('https://cricket-score-board-server.vercel.app/score')
-        .then(res =>res.json())
-        .then(data =>{
-            setMatch(data)
-        })
-    }, [])
+    })
+
+   
     return (
         <div className='mt-10'>
             <h1 className='font-bold text-xl text-center pb-20'>Upcoming Matches</h1>
@@ -23,6 +24,9 @@ const Matches = () => {
         </div>
        
     );
+
+
+   
 };
 
 export default Matches;

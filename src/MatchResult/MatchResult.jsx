@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from 'react';
 import MatchResultDetails from './MatchResultDetails';
+import { useQuery } from '@tanstack/react-query';
 
 const MatchResult = () => {
 
-    const[result, setResult] = useState([]);
+    const {refetch, data: result = []} = useQuery({
+        queryKey:[ 'result' ],
+        queryFn:async () =>{
+            const res = await fetch('https://cricket-score-board-server.vercel.app/result')
+            return res.json()
+        }
 
-    useEffect(()=>{
-        fetch('https://cricket-score-board-server.vercel.app/result')
-        .then(res=> res.json())
-        .then(data=>{
-            setResult(data)
-        })
-    }, [])
+    })
+
+  
     return (
         <div className='mt-10'>
                         <h1 className='font-bold text-xl text-center pb-20'> Match Results</h1>
