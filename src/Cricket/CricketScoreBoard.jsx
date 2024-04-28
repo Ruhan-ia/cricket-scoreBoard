@@ -16,18 +16,18 @@ const CricketScoreBoard = () => {
             
             </div>
 
-            <div className='bg-slate-300 p-5 '>
-                <div className='flex items-center justify-center gap-24 '>
+            <div className='bg-slate-300 mt-5 '>
+                <div className='flex items-center  justify-around  '>
                 <div>
                         <img className='w-44' src={flag2} alt="flag" />
-                        <p className='font-bold text-center p-3 text-2xl'>265/6</p>
+                        <p className='font-bold text-center pt-3  text-2xl'>265/6</p>
                     </div>
                     <span className='text-red-500 font-semibold text-5xl'>vs</span>
 
-                    <div>
+                    <div className='mt-10'>
                         <img  className='w-44' src={flag1} alt="flag" />
-                        <p className='font-bold text-center p-3 text-2xl'><span className='text-xl text-slate-700 font-semibold'>(47.5/50 ov. T:266)</span>269/7</p>
-
+                        <p className='font-bold text-center pt-3  text-2xl'>269/7</p><br />
+                        <span className='text-xl text-slate-700 font-semibold'>(47.5/50 ov. T:266)</span>
                     </div>
                    
                 </div>

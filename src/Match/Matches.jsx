@@ -3,7 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 
 const Matches = () => {
 
-    const {refetch, data: match = []} = useQuery({
+    const { data: match = []} = useQuery({
         queryKey:[ 'match' ],
         queryFn:async () =>{
             const res = await fetch('https://cricket-score-board-server.vercel.app/score')

@@ -6,7 +6,7 @@ const MatchDetails = ({ Mt }) => {
   console.log(Mt);
   return (
     <div>
-      <div className="bg-white shadow-xl p-10 rounded w-80  ">
+      <div className="bg-white shadow-xl p-10 rounded-xl w-80 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black hover:text-white duration-300">
 
        
         <div className="flex gap-3 items-center">
