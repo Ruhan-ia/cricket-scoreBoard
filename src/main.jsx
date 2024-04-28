@@ -8,7 +8,7 @@ import {
 import './index.css'
 import CricketScoreBoard from './Cricket/CricketScoreBoard.jsx';
 import {
-  useQuery,
+  
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query';

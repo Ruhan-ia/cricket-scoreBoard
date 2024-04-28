@@ -8,6 +8,16 @@ const MatchDetails = ({ Mt }) => {
     <div>
       <div className="bg-white shadow-xl p-10 rounded-xl w-80 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black hover:text-white duration-300">
 
+        <p className="font-bold text-xl text-center">{date}</p>
+        <div className=" p-3 flex items-center justify-between font-semibold text-gray-500">
+        <div>
+            <p>{venue}</p>
+        </div>
+        <div>
+          <p>{time}</p>
+        </div>
+
+        </div>
        
         <div className="flex gap-3 items-center">
         <div className="avatar">
@@ -19,9 +29,7 @@ const MatchDetails = ({ Mt }) => {
         
         <h1>{team1}</h1>
 
-        <div>
-            <p className="font-thin text-gray-500">{venue}</p>
-        </div>
+       
        </div>
       
       
@@ -33,10 +41,7 @@ const MatchDetails = ({ Mt }) => {
         </div>
         <h1>{team2}</h1>
 
-        <div>
-            <p>{date}</p>
-            <p>{time}</p>
-        </div>
+        
         </div>
 
        

@@ -11,7 +11,7 @@ const MatchResultDetails = ({Rs}) => {
               <p>{date}</p>
               
           </div>
-          <div  className="font-thin text-gray-500">
+          <div  className="font-semibold text-center p-3 text-gray-500">
               <p>{venue}</p>
           </div>
           <div className="flex gap-3 items-center">
@@ -22,8 +22,10 @@ const MatchResultDetails = ({Rs}) => {
           </div>
   
           
-          <h1>{team1} <span  className='font-semibold'>{run1}</span></h1>
-          <p>ov.<span className='font-semibold'>{over1}</span></p>
+          <div>
+          <h1>{team1}</h1>
+          <p><span  className='font-semibold'>{run1}</span> ov.<span className='font-semibold'>{over1}</span></p>
+          </div>
   
         
          </div>
@@ -35,8 +37,10 @@ const MatchResultDetails = ({Rs}) => {
               <img src={image2} />
             </div>
           </div>
-          <h1>{team2} <span  className='font-semibold'>{run2}</span></h1>
-          <p>ov.<span className='font-semibold'>{over2}</span></p>
+          <div>
+          <h1>{team2}</h1>
+          <p><span  className='font-semibold'>{run2}</span> ov.<span className='font-semibold'>{over2}</span></p>
+          </div>
         
           </div>
   
