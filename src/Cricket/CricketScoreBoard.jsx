@@ -1,12 +1,11 @@
 import React from 'react';
 import flag1 from '../assets/images/bng.jpg';
 import flag2 from '../assets/images/india.png';
-import MatchDetails from '../Match/MatchDetails';
 import Matches from '../Match/Matches';
 import MatchResult from '../MatchResult/MatchResult';
 const CricketScoreBoard = () => {
     return (
-        <div className=' container bg-slate-300'>
+        <div className=' bg-slate-300'>
             <div className='bg-green-800 text-center rounded-full p-10 '>
             <h1 className='font-bold text-6xl text center text-white '>Bangladesh <span className='text-red-500 font-thin'>vs</span> India</h1>
             
