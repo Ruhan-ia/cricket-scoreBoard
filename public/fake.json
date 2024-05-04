@@ -236,5 +236,122 @@
       "over2":"46.4", 
       "won":"South Africa won By 37 runs"
 
+    },
+    {
+      "title": "India Wins T20 World Cup",
+      "date": "2024-04-30",
+      "description": "India clinched the T20 World Cup title after a thrilling final match against Australia.",
+      "team": "India",
+      "imageUrl": "https://i.ibb.co/RYSMpgK/india.jpg"
+    },
+    {
+      "title": "England Defeats Pakistan in Test Series",
+      "date": "2024-04-25",
+      "description": "England emerged victorious in a closely contested Test series against Pakistan.",
+      "team": "England",
+      "imageUrl": "https://i.ibb.co/XWkp1y0/eng-land.jpg"
+    },
+    {
+      "title": "South Africa Dominates ODI Series Against New Zealand",
+      "date": "2024-04-20",
+      "description": "South Africa showcased a stellar performance in the ODI series, defeating New Zealand convincingly.",
+      "team": "South Africa",
+      "imageUrl": "https://i.ibb.co/yNY3zMS/south.jpg"
+    },
+    {
+      "title": "Zimbabwe Triumphs in Test Series Against Ireland",
+      "date": "2024-03-15",
+      "description": "Zimbabwe secured a test series victory against Ireland in a closely fought contest.",
+      "team": "Zimbabwe",
+      "imageUrl": "https://i.ibb.co/Tcctq3y/zim-babuwe.jpg"
+    },
+    {
+      "title": "Australia Retains Ashes Trophy",
+      "date": "2024-04-15",
+      "description": "Australia successfully defended the Ashes trophy against England in the test series.",
+      "team": "Australia",
+      "imageUrl": "https://i.ibb.co/QN0rxny/australia.jpg" 
+    },
+    {
+      "title": "Pakistan Wins Asia Cup",
+      "date": "2024-04-10",
+      "description": "Pakistan emerged victorious in the Asia Cup final, defeating Sri Lanka in a thrilling encounter.",
+      "team": "Pakistan",
+      "imageUrl": "https://i.ibb.co/bH4rjCV/pakistan.jpg"
+    },
+    {
+      "title": "West Indies Clinches T20 Series Against Bangladesh",
+      "date": "2024-03-30",
+      "description": "West Indies emerged victorious in the T20 series against Bangladesh with a commanding performance.",
+      "team": "West Indies",
+      "imageUrl": "https://i.ibb.co/c2f4FM2/westindis.jpg"
+    },
+    {
+      "title": "New Zealand Secures Test Series Win Against West Indies",
+      "date": "2024-04-05",
+      "description": "New Zealand displayed an impressive performance to secure a test series win against West Indies.",
+      "team": "New Zealand",
+      "imageUrl": "https://i.ibb.co/Fq79wwz/new-Zeland.jpg"
+    },
+    {
+      "title": "Bangladesh Wins Tri-Series Involving Zimbabwe and Ireland",
+      "date": "2024-03-20",
+      "description": "Bangladesh emerged as the champion of the tri-series involving Zimbabwe and Ireland.",
+      "team": "Bangladesh",
+      "imageUrl": "https://i.ibb.co/9hP0zRL/bangladesh.jpg"
     }
+   ,
+    {
+      "title": "India Wins T20 World Cup",
+      "date": "2024-04-30",
+      "description": "India clinched the T20 World Cup title after a thrilling final match against Australia.",
+      "team": "India",
+      "imageUrl": "https://i.ibb.co/RYSMpgK/india.jpg"
+    },
+    {
+      "title": "England Defeats Pakistan in Test Series",
+      "date": "2024-04-25",
+      "description": "England emerged victorious in a closely contested Test series against Pakistan.",
+      "team": "England",
+      "imageUrl": "https://i.ibb.co/XWkp1y0/eng-land.jpg"
+    },
+    {
+      "title": "South Africa Dominates ODI Series Against New Zealand",
+      "date": "2024-04-20",
+      "description": "South Africa showcased a stellar performance in the ODI series, defeating New Zealand convincingly.",
+      "team": "South Africa",
+      "imageUrl": "https://i.ibb.co/yNY3zMS/south.jpg"
+    },
+    {
+      "title": "Australia Retains Ashes Trophy",
+      "date": "2024-04-15",
+      "description": "Australia successfully defended the Ashes trophy against England in the test series.",
+      "team": "Australia",
+      "imageUrl": "https://i.ibb.co/QN0rxny/australia.jpg" 
+
+    },
+    {
+      "title": "Pakistan Wins Asia Cup",
+      "date": "2024-04-10",
+      "description": "Pakistan emerged victorious in the Asia Cup final, defeating Sri Lanka in a thrilling encounter.",
+      "team": "Pakistan",
+      "imageUrl": "https://i.ibb.co/bH4rjCV/pakistan.jpg"
+    },
+    {
+      "title": "New Zealand Secures Test Series Win Against West Indies",
+      "date": "2024-04-05",
+      "description": "New Zealand displayed an impressive performance to secure a test series win against West Indies.",
+      "team": "New Zealand",
+      "imageUrl": "https://i.ibb.co/Fq79wwz/new-Zeland.jpg"
+    },
+    
+    {
+      "title": "Sri Lanka Defeats Afghanistan in ODI Series",
+      "date": "2024-03-25",
+      "description": "Sri Lanka secured a comprehensive victory against Afghanistan in the ODI series.",
+      "team": "Sri Lanka",
+      "imageUrl": "https://i.ibb.co/F5kfZch/sri-lanka.jpg"
+    }
+   
+
   ]

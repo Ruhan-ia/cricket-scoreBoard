@@ -12,10 +12,22 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query';
+import Main from './Main/Main.jsx';
+import News from './News/News.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <CricketScoreBoard></CricketScoreBoard>,
+    element: <Main></Main>,
+    children: [
+      {
+        path:'/',
+        element:<CricketScoreBoard></CricketScoreBoard>
+      },
+      {
+        path:'/news',
+        element:<News></News>
+      }
+    ]
   },
 ]);
 

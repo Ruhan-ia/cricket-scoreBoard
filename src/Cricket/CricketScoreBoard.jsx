@@ -3,6 +3,8 @@ import flag1 from '../assets/images/bng.jpg';
 import flag2 from '../assets/images/india.png';
 import Matches from '../Match/Matches';
 import MatchResult from '../MatchResult/MatchResult';
+import Lottie from 'react-lottie-player';
+import animationData from '../assets/images/Animation - 1714583935237.json'
 const CricketScoreBoard = () => {
     return (
         <div className=' bg-slate-300'>
@@ -21,9 +23,14 @@ const CricketScoreBoard = () => {
                         <img className='w-44' src={flag2} alt="flag" />
                         <p className='font-bold text-center pt-3  text-2xl'>265/6</p>
                     </div>
-                    <span className='text-red-500 font-semibold text-5xl'>vs</span>
+                            <Lottie
+                             animationData={animationData}
+                             loop
+                             play
+                             style={{ width: 150, height: 150 }}>
 
-                    <div className='mt-10'>
+                            </Lottie>
+                        <div className='mt-10'>
                         <img  className='w-44' src={flag1} alt="flag" />
                         <p className='font-bold text-center pt-3  text-2xl'>269/7</p><br />
                         <span className='text-xl text-slate-700 font-semibold'>(47.5/50 ov. T:266)</span>
