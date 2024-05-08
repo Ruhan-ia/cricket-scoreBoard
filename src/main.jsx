@@ -14,6 +14,9 @@ import {
 } from '@tanstack/react-query';
 import Main from './Main/Main.jsx';
 import News from './News/News.jsx';
+import SignUp from './SignUp/SignUp.jsx';
+import AuthProvider from './Provider/AuthProvider.jsx';
+import Login from './SignUp/Login/Login.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +29,14 @@ const router = createBrowserRouter([
       {
         path:'/news',
         element:<News></News>
+      },
+       {
+        path:'/login',
+        element:<Login></Login>
+       },
+      {
+        path:'/signUp',
+        element:<SignUp></SignUp>
       }
     ]
   },
@@ -36,9 +47,11 @@ const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
+   <AuthProvider>
+   <QueryClientProvider client={queryClient}>
     <RouterProvider router={router}></RouterProvider>
     
     </QueryClientProvider>
+   </AuthProvider>
   </React.StrictMode>,
 )

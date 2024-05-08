@@ -1,8 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../Provider/AuthProvider';
 
 const Navbar = () => {
+  const {user, logOut} = useContext(AuthContext)
   const { data: result = []} = useQuery({
     queryKey:[ 'result' ],
     queryFn:async () =>{
@@ -11,6 +13,15 @@ const Navbar = () => {
     }
 
 })
+
+const handleLogOut = () =>{
+  logOut()
+  .then(result=>{
+    const loggedUser = result.user
+    console.log(loggedUser)
+  })
+  .catch(() => {});
+}
     return (
         <div className="navbar bg-base-100">
   <div className="navbar-start">
@@ -35,7 +46,15 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <button className="btn btn-ghost btn-circle me-3"  onClick={()=>document.getElementById('my_modal_5').showModal()}>
+    {
+      user && <div className="avatar items-center">
+      <div className="w-12 rounded-full">
+        <img src={user.photoURL}/>
+      </div>
+    </div>
+    }
+   {
+    user ? <> <button className="btn btn-ghost btn-circle me-3"  onClick={()=>document.getElementById('my_modal_5').showModal()}>
     <dialog id="my_modal_5" className="modal modal-middle ">
   <div className="modal-box">
     <div className='grid  grid-cols-6 gap-3'>
@@ -72,7 +91,9 @@ const Navbar = () => {
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
       </div>
     </button>
-    <a className="btn">Login</a>
+    <button onClick={handleLogOut} className="btn">LogOut</button></> :<>
+    <Link className="btn" to='/login'>Login</Link>
+    </>}
   </div>
 </div>
     );
